@@ -32,8 +32,12 @@ html {
   font-size: 12rem;
   position: relative;
   letter-spacing: 0.5rem;
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-shadow: 0.2rem 0.2rem 0.2rem #000;
+}
+
+.section-header span {
+  color: rgb(14, 209, 167);
 }
 
 .landing-page-img-container {
@@ -51,6 +55,103 @@ html {
 
 .landing-page-img-container img.change {
   transform: translate(-49%, 7%) scale(1);
-} 
+}
 
-/* End of section 1
+/* End of section 1 */
+
+/* section 2 */
+.section-2 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-2-header {
+  font-size: 10rem;
+  position: relative;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  text-shadow: 0.2rem 0.2rem 0.2rem #000;
+  color: aliceblue;
+  z-index: 1;
+}
+
+.slider {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transform: translate(0, 25%);
+}
+
+.slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.slider__btn {
+  position: absolute;
+  z-index: inherit;
+  color: aliceblue;
+  transition: all 0.5;
+  border-radius: 1rem;
+}
+
+.slider__btn--left {
+  left: 5rem;
+  top: 50%;
+}
+
+.slider__btn--left:hover {
+  color: rgb(225, 101, 92);
+}
+.slider__btn--right {
+  right: 5rem;
+  top: 50%;
+}
+
+.slider__btn--right:hover {
+  color: rgb(87, 225, 105);
+}
+
+.dots {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  color: red;
+  transform: translateX(-50%);
+  display: flex;
+  z-index: 2;
+}
+
+.dots__dot {
+  border: none;
+  background-color: #b9b9b9;
+  opacity: 0.7;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-right: 1.75rem;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  /* Only necessary when overlying images */
+  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
+}
+
+.dots__dot:last-child {
+  margin: 0;
+}
+
+.dots__dot--active {
+  /* background-color: #fff; */
+  background-color: #888;
+  opacity: 1;
+}
+/*End of section 2 */
