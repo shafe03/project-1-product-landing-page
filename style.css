@@ -8,12 +8,19 @@
   font-family: "Lato", sans-serif;
   text-decoration: none;
   font-weight: 400;
+  outline: none;
 }
 
 html {
   font-size: 62.5%;
 }
 /* End ofcommon styling */
+
+/* Modifier */
+.overlay {
+}
+
+/*End of Modifier */
 
 /* section 1 */
 .section-1 {
@@ -193,7 +200,7 @@ html {
 }
 
 .upcoming-product:hover {
-  transform: rotateY(20deg) skewX(-2deg) translateY(-3rem);
+  transform: rotateY(0deg) skewX(0deg) translateY(-3rem);
   box-shadow: 2rem 2rem 2rem #000;
 }
 
@@ -201,10 +208,11 @@ html {
   content: "";
   height: 100%;
   width: 1rem;
-  background-color: #ebf4ee;
+  background-color: #e4f5ea;
   border-radius: 1rem;
   position: absolute;
   top: 0;
+  border-radius: 20%;
   left: -0.9rem;
   transform: skewY(45deg);
   transform-origin: right;
@@ -219,6 +227,7 @@ html {
   position: absolute;
   top: -0.9rem;
   left: 0;
+  border-radius: 20%;
   transform: skewX(45deg);
   transform-origin: bottom;
   box-shadow: -0.1rem -0.1rem -0.1rem #000;
@@ -231,15 +240,77 @@ html {
 }
 
 .product-name {
-  padding: 0.5rem;
-  color: rgb(9, 96, 53);
+  padding: 1rem;
+  color: rgb(5, 133, 71);
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
 }
 
 .product-btn {
+  width: 30%;
+  background-color: rgb(192, 199, 206);
+  color: rgb(108, 108, 109);
+  border-radius: 5rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
   border: none;
-  padding: 0.5rem;
-  background-color: rgb(221, 240, 236);
-  border-radius: 20%;
+  padding: 0.5rem 0.5rem;
   cursor: pointer;
+  box-shadow: -0.2rem -0.2rem -0.2rem #000;
 }
-/* End of section 3 - upcoming product */ ;
+/* End of section 3 - upcoming product */
+
+/* section 4 Explore */
+.section-4 {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-4-header {
+  text-align: center;
+  font-size: 12rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem #000;
+}
+
+.explore-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.explore-gallery__link {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  position: relative;
+}
+.explore-gallery__link img {
+  height: 80%;
+  width: 80%;
+}
+.explore-gallery__link h3 {
+  position: absolute;
+  font-size: 2.5rem;
+  top: 12%;
+  color: rgb(92, 41, 7);
+  line-height: 1.5rem;
+  padding: 1rem 5rem;
+}
+.explore-gallery__link p {
+  position: absolute;
+  top: 25%;
+  color: rgb(2, 83, 2);
+  line-height: 1.5rem;
+  padding: 1rem 5rem;
+}
+
+/* End of section 4 Explore */
