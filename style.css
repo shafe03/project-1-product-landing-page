@@ -555,5 +555,9 @@ html {
   html {
     font: 5%;
   }
+
+  .explore-gallery__link:hover .gallery-link__productDescription {
+    padding-right: 30rem;
+  }
 }
 /* End of media query */
