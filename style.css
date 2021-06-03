@@ -285,6 +285,7 @@ html {
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-left: 7rem;
 }
 
 .explore-gallery__link {
@@ -293,24 +294,89 @@ html {
   margin: 1rem;
   position: relative;
 }
-.explore-gallery__link img {
+
+.explore-gallery__link::before {
+  content: "";
+  position: absolute;
+  top: 2vw;
+  left: 60%;
+  width: 0.2rem;
+  height: 0%;
+  background-color: #000;
+  transition: height 1.5s;
+}
+
+.explore-gallery__link:hover::before {
+  height: 80%;
+}
+
+.explore-gallery__link::after {
+  content: "";
+  position: absolute;
+  top: 22%;
+  left: 2rem;
+  width: 0%;
+  height: 0.2rem;
+  background-color: #000;
+  transition: width 1.5s;
+}
+
+.explore-gallery__link:hover::after {
+  width: 75%;
+}
+
+.gallery-link__img {
   height: 80%;
   width: 80%;
 }
-.explore-gallery__link h3 {
+
+.explore-gallery__link:hover .gallery-link__img {
+  transition: all 0.5s;
+  filter: blur(0.5rem);
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
+.gallery-link__productName {
   position: absolute;
   font-size: 2.5rem;
-  top: 12%;
-  color: rgb(92, 41, 7);
-  line-height: 1.5rem;
-  padding: 1rem 5rem;
+  top: 10%;
+  left: 1rem;
+  width: 0%;
+  font-weight: 800;
+  color: rgb(1, 15, 14);
+  padding-left: 2rem;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: width 0.5s;
+  opacity: 0;
 }
-.explore-gallery__link p {
+
+.explore-gallery__link:hover .gallery-link__productName {
+  width: 100%;
+  opacity: 1;
+  transition: width 0.5s 0s, opacity 1s 0.5s;
+}
+
+.gallery-link__productDescription {
   position: absolute;
   top: 25%;
-  color: rgb(2, 83, 2);
+  color: rgb(1, 54, 1);
   line-height: 1.5rem;
-  padding: 1rem 5rem;
+  padding-right: 15rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.explore-gallery__link:hover .gallery-link__productDescription {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s 1s;
 }
 
 /* End of section 4 Explore */
