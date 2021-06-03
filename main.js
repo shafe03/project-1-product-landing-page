@@ -16,7 +16,15 @@ setInterval(() => {
   }
 }, 2500);
 
-// slider
+// -------------------menu bar animation------------
+document.querySelector(".menu").addEventListener("click", () => {
+  document.querySelectorAll(".target").forEach((item) => {
+    item.classList.toggle("change");
+    console.log(item);
+  });
+});
+
+// -------------------slider---------------------------
 const slides = document.querySelectorAll(".slide");
 const btnLeft = document.querySelector(".slider__btn--left");
 const btnRight = document.querySelector(".slider__btn--right");
