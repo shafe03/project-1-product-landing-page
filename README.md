@@ -12,3 +12,5 @@
  *  Font sizing 
  *  Media query
  *  Animated navbar
+ *  Creating slider
+  
