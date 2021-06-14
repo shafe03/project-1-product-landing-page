@@ -1,6 +1,6 @@
 # Project-1-product-landing-page
 
-* All img taken from **https://waltonbd.com/** used images and products all right reserve for **https://waltonbd.com/**. i have used their images just for education purpose.
+* All img taken from **https://waltonbd.com/** used images and products all right reserve for **https://waltonbd.com/**. i have used their images just for educational purpose.
 
 ## Project Challenges & Learning
 
